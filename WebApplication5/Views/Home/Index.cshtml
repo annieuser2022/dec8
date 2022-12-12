@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Horizon</h1>
+    <input type="button" value="Submit" />
+    <h3> Login</h3>
+       <input type="button" value="Login" 
+           onclick="window.location='@Url.Action("LogInPage", "Home")'"/>
+       
+    <h3>Create an account</h3>
+    <input type="button" value="Sign Up"
+           onclick="window.location='@Url.Action("SignupPage", "Home")'" />
+
+</div>
+
